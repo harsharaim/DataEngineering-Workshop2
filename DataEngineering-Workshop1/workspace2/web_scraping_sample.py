@@ -1,0 +1,10 @@
+import requests
+
+url = 'https://www.w3schools.com/python/demopage.php'
+myobj = {'somekey': 'somevalue'}
+
+x = requests.post(url, json = myobj)
+
+print(x.text)
+print("executed")
+print("post completed")
